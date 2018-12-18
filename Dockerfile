@@ -12,6 +12,7 @@ ENV CRONTAB_FILE=/etc/crontabs/root
 
 RUN mkdir /etc/cron.d
 
+# Setup cron jobs
 RUN echo "0 0 1 * * /root/ns-letsencrypt/ns-cronjob.sh > /proc/1/fd/1 2>/proc/1/fd/2" > ${CRONTAB_FILE} && \
     chmod 0644 ${CRONTAB_FILE} && \
     crontab ${CRONTAB_FILE}
