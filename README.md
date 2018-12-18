@@ -9,7 +9,7 @@ TBD
 ```
 docker run --name ns-letsencrypt \
         --mount type=bind,source=<path to data>,target=/root \
-        xawen\ns-letsencrypt
+        xawen/ns-letsencrypt
 
 ```
 
