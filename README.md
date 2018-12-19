@@ -9,6 +9,7 @@ TBD
 ```
 docker run --name ns-letsencrypt \
         --mount type=bind,source=<path to data>,target=/root \
+        --mount type=bind,source=/etc/localtime,destination=/etc/localtime,readonly \
         xawen/ns-letsencrypt
 
 ```
@@ -30,3 +31,4 @@ At that point, follow the diretions on Ryan's page.  Note that following steps a
 - Configure Linux Server: git clone --recursive https://github.com/ryancbutler/ns-letsencrypt
 - Automate Renewal: All steps
 
+The container will create a cron job that will run once per week (3am on Saturday).  The ns_letsencrypt script will update the LE certificate once it's within 30 days of expiration.
