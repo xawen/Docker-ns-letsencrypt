@@ -3,7 +3,7 @@
 A Docker image to run Ryan Butler's [ns-letsencrypt script](https://www.techdrabble.com/citrix/18-letsencrypt-san-certificate-with-citrix-netscaler-take-2).
 
 ## Discussion
-TBD
+[https://itrandomness.com/2019/09/lets-encrypt-and-netscaler-a-docker-approach/](https://itrandomness.com/2019/09/lets-encrypt-and-netscaler-a-docker-approach/)
 
 ## Starting a container
 ```
